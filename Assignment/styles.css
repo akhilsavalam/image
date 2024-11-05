@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 50px;
+}
+
+.letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s, transform 0.5s;
+    
+}
+
+.letter.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.letter-img{
+    width: 10%;
+    height: 10%;
+}
